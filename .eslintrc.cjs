@@ -17,6 +17,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
     project: './tsconfig.json',
+    extraFileExtensions: ['.css'],
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
   rules: {
@@ -27,5 +28,6 @@ module.exports = {
         endOfLine: 'auto',
       },
     ],
+    'no-param-reassign': [2, { props: false }],
   },
 };
